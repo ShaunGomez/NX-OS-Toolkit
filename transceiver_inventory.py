@@ -18,6 +18,7 @@ def trans_interface_parser(transceiver):
 		return False
 	return output
 
+qsfp_bidi = 0
 ten_gb_sr = 0
 ten_gb_lr = 0
 one_gb_mm = 0
@@ -38,6 +39,8 @@ for transceiver in transinfo['TABLE_interface']['ROW_interface']:
 			one_gb_sm += 1
 		elif transceiver['type'] == '1000base-T':
 			glc_t += 1
+		elif transceiver['type'] == 'QSFP+ bidi':
+			qsfp_bidi += 1
 	else:
 		pass
 
