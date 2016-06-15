@@ -31,13 +31,13 @@ def create_config(neigh_info):
 	return config_list
 
 def apply_configuration(configuration):
-	for config in config_list:
+	for config in configiguration:
 		cli('configure terminal ; {0} ; {1}'.format(config['interface'], config['description']))
 
 def format_interface_strings(remote_intf):
-    ''' takes the str representation of the 
+    ''' takes the str representation of the
     remote interface for a given CDP device and
-    formats it to short notation. 
+    formats it to short notation.
 
     Example: GigbitEthernet = Gig
     Example: TenGigabitEthernet = Ten
