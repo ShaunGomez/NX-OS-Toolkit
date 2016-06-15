@@ -1,3 +1,15 @@
+"""Script Cataloging Information
+:Product Info:Nexus::9000::9516::NX-OS Release 6.2
+:Category:Monitoring
+:Box Type:On-Box
+:Title:Traffic Monitoring
+:Short Description:This script is to monitor interfaces throughput.
+:Long Description:This script is to monitor interfaces with non-zero bps
+this includes bps out, bps in, and converts txload/rxload to a percentage.
+:Input:command to check the interface counters
+     e.g show interface
+:Output:Details of utlization for all interfaces.
+"""
 from cli import *
 import json
 
